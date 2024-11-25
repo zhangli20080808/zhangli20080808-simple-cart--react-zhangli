@@ -1,0 +1,58 @@
+/* 单个商品 */
+.productItem {
+  flex: 1;
+  border: 1px solid #ccc;
+  /* 设置内边距 */
+  padding: 8px;
+  /* 设置外边距，即商品之间的间隔 */
+  margin: 8px;
+  /* 设置边框 */
+  border: 1px solid #ccc;
+  /* 设置背景色 */
+  background-color: #fff;
+  /* 设置圆角 */
+  border-radius: 4px;
+  /* 设置阴影 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* 设置最大宽度，以便在不同屏幕尺寸下自适应 */
+  max-width: 250px;
+  /* 设置文本居中 */
+  text-align: center;
+  max-height: 250px;
+  .bottom {
+    display: flex;
+  }
+  .div {
+    background-color: #f5f5ff;
+    max-height: 150px;
+    /* 设置图片的最小高度，以确保它是正方形 */
+    min-height: 150px;
+  }
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  .name {
+    margin: 0;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .procice {
+    font-weight: bold;
+    margin-right: 8px;
+    margin-top: -2px;
+  }
+  button {
+    background-color: #f0f0f0;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .right {
+  }
+}
